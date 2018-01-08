@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Nav Bar Example</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav id="nav">
+		<div class="content">
+			<ul class="nav-list">
+				<li>
+					<a href="#menu" id="menu"><span class="menu-close">X</span><span class="menu-open">O</span></a>
+				</li>
+				<li class="nav-item">
+					<a href="/apple">Apple</a>
+				</li>
+				<li class="nav-item">
+					<a href="/berry">Berry</a>
+				</li>
+				<li class="nav-item">
+					<a href="/cherry">Cherry</a>
+				</li>
+				<li class="nav-item">
+					<a href="/guava">Guava</a>
+				</li>
+				<li class="nav-item">
+					<a href="/grape">Grape</a>
+				</li>
+				<li class="nav-item">
+					<a href="/orange">Orange</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<script type="text/javascript">
+		document.getElementById('menu').addEventListener('click', function () {
+			var navbar = document.getElementById('nav');
+
+		  	if (navbar.classList.contains('open')) {
+		  		navbar.classList.add('close');
+		  		navbar.classList.remove('open');
+		  	} else {
+		    	navbar.classList.add('open');
+		    	navbar.classList.remove('close');
+		  	}
+		});
+	</script>
+</body>
+</html>
