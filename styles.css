@@ -33,9 +33,9 @@ ul {
 }
 
 .nav-list:after {
-  	display: inline-block;
-  	content: '';
-  	width: 100%;
+	display: inline-block;
+	content: '';
+	width: 100%;
 }
 
 #menu {
@@ -61,38 +61,36 @@ ul {
 		display: none;
 	}
 	
-	.menu-close {
-		display: none;
-	}
-
-	.menu-open {
+	.menu-closer {
 		display: block;
 	}
 
-	nav.open {
+	.menu-opener {
+		display: none;
+	}
+
+	nav.opened {
 		height: 100%;
 	}
 
-	.close #menu .menu-close {
-		display: none;
-	}
-
-	.open #menu .menu-close {
+	.closed #menu .menu-closer {
 		display: block;
 	}
 
-	.close #menu .menu-open {
-		display: block;
-	}
-
-	.open #menu .menu-open {
+	.opened #menu .menu-closer {
 		display: none;
 	}
 
-	.open .nav-item {
+	.closed #menu .menu-opener {
+		display: none;
+	}
+
+	.opened #menu .menu-opener {
+		display: block;
+	}
+
+	.opened .nav-item {
 		display: block;
 	}
 
 }
-
-
