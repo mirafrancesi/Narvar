@@ -8,7 +8,7 @@
 		<div class="content">
 			<ul class="nav-list">
 				<li>
-					<a href="#menu" id="menu"><span class="menu-close">X</span><span class="menu-open">O</span></a>
+					<a href="#menu" id="menu"><span class="menu-closer">O</span><span class="menu-opener">X</span></a>
 				</li>
 				<li class="nav-item">
 					<a href="/apple">Apple</a>
@@ -35,12 +35,12 @@
 		document.getElementById('menu').addEventListener('click', function () {
 			var navbar = document.getElementById('nav');
 
-		  	if (navbar.classList.contains('open')) {
-		  		navbar.classList.add('close');
-		  		navbar.classList.remove('open');
+		  	if (navbar.classList.contains('opened')) {
+		  		navbar.classList.add('closed');
+		  		navbar.classList.remove('opened');
 		  	} else {
-		    	navbar.classList.add('open');
-		    	navbar.classList.remove('close');
+		    	navbar.classList.add('opened');
+		    	navbar.classList.remove('closed');
 		  	}
 		});
 	</script>
